@@ -22,3 +22,13 @@
   ```
   dconf dump /
   ```
+
+- システムでインストールされたdesktopファイル（ランチャーのアイコン）を上書きする
+
+  `~/.local/share/applications/`に同名のファイルを作成する。
+  
+  非表示にするには
+  ```
+  [Desktop Entry]
+  NoDisplay=true
+  ```
