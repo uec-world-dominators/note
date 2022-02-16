@@ -32,3 +32,9 @@
   [Desktop Entry]
   NoDisplay=true
   ```
+
+- デスクトップアイコンのリロード
+
+  ```
+  gtk-update-icon-cache
+  ```
