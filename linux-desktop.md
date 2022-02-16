@@ -38,3 +38,10 @@
   ```
   gtk-update-icon-cache
   ```
+
+- ユーザディレクトリの日本語 <-> 英語
+
+  ```
+  LANG=C xdg-user-dirs-update
+  LANG=ja_JP.UTF-8 xdg-user-dirs-update
+  ```
