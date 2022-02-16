@@ -30,6 +30,8 @@
 
 - 「ドキュメント」や「ダウンロード」などのフォルダ名の定義
 - フォントAPI(fontconfig)
+- `desktop`ファイル
+- 他: https://www.freedesktop.org/wiki/Software/
 
 ## GTK
 
