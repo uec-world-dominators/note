@@ -45,3 +45,10 @@
   LANG=C xdg-user-dirs-update
   LANG=ja_JP.UTF-8 xdg-user-dirs-update
   ```
+
+- gdmのサスペンド無効化
+  ```
+  sudo -u gdm -g gdm /bin/sh -c "export $(dbus-launch); dconf write /org/gnome/desktop/session/idle-delay 0"
+  ```
+  
+  > https://unix.stackexchange.com/questions/361214/disable-gdm-suspend-on-lock-screen
