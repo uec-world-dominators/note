@@ -59,8 +59,10 @@
   - desktopファイルにnew-windowアクションを追加する
 
   ```
+  [Desktop Entry]
   Actions=new-window;open-home;open-computer;open-trash;
-
+  ...
+  
   [Desktop Action new-window]
   Name=Nemo
   Exec=nemo
