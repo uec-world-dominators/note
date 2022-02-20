@@ -52,3 +52,18 @@
   ```
   
   > https://unix.stackexchange.com/questions/361214/disable-gdm-suspend-on-lock-screen
+
+- Dash to Panelで中クリックで新規インスタンスが起動しない
+
+  - nemoとかが該当する
+  - desktopファイルにnew-windowアクションを追加する
+
+  ```
+  Actions=new-window;open-home;open-computer;open-trash;
+
+  [Desktop Action new-window]
+  Name=Nemo
+  Exec=nemo
+  ```
+
+  > https://github.com/home-sweet-gnome/dash-to-panel/blob/17f6fdfde3f887e1e09e29c4303371816a14e4bd/appIcons.js#L991
