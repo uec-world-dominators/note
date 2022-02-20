@@ -53,7 +53,7 @@
   
   > https://unix.stackexchange.com/questions/361214/disable-gdm-suspend-on-lock-screen
 
-- Dash to Panelで中クリックで新規インスタンスが起動しない
+- Dash to PanelやDash to Dockで中クリックで新規インスタンスが起動しない
 
   - nemoとかが該当する
   - desktopファイルにnew-windowアクションを追加する
@@ -69,3 +69,4 @@
   ```
 
   > https://github.com/home-sweet-gnome/dash-to-panel/blob/17f6fdfde3f887e1e09e29c4303371816a14e4bd/appIcons.js#L991
+  > https://github.com/micheleg/dash-to-dock/blob/53114b4e000482a753e8b42dfa10d6057c08d1c6/appIcons.js#L676
