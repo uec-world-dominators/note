@@ -1,5 +1,7 @@
 ## iptables-nftでMASQUERADEとかすると`nft list ruleset`の表示が変
 
+Dockerは`iptables`を使うのでnftables環境で`iptables`フロントエンドが使われたときに起きる。
+
 ```
 $ nft --version
 nftables v1.0.1 (Fearless Fosdick #3)
