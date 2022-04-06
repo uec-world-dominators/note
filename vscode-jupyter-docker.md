@@ -9,7 +9,7 @@ RUN jupyter notebook --generate-config
 RUN sed -ie 's/# c.NotebookApp.disable_check_xsrf = False/c.NotebookApp.disable_check_xsrf = True/' ~/.jupyter/jupyter_notebook_config.py
 ```
 ```
-docker build -t jupyter
+docker build -t jupyter .
 ```
 以下の```docker-compose.yml```を使ってjupyter notebookを立ち上げる
 ```
@@ -18,6 +18,7 @@ version: "3"
 services:
   jupyter:
     image: jupyter:latest
+    runtime: nvidia
     ports:
       - 8080:8888
     entrypoint: jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser --NotebookApp.token=''
