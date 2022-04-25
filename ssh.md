@@ -70,3 +70,9 @@ command="ls -lh",restrict,from="192.168.0.0/24" ssh-rsa ...
 -o StrictHostKeyChecking=no
 -o UserKnownHostsFile=/dev/null
 ```
+
+### sudo使用時に自分の認証情報を利用する
+
+```
+sudo git -c core.sshCommand="ssh -i /home/shosato/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" pull
+```
