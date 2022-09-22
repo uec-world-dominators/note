@@ -6,3 +6,12 @@
   display: none;
 }
 ```
+
+## youtube.googleapis.com
+
+```css
+/* Google Driveとかの動画の色を反転してダークテーマにする */
+video {
+  filter: invert(1) hue-rotate(180deg);
+}
+```
