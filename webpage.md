@@ -5,6 +5,11 @@
 .g [id^=eob_] {
   display: none;
 }
+
+/* 「他の人はこちらも質問」を非表示 */
+[data-it="rq"] {
+  display: none;
+}
 ```
 
 ## youtube.googleapis.com
