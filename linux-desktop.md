@@ -48,10 +48,9 @@
 
 - gdmのサスペンド無効化
   ```
-  sudo -u gdm -g gdm /bin/sh -c "export $(dbus-launch); dconf write /org/gnome/desktop/session/idle-delay 0"
+  sudo -u gdm dbus-launch gsettings set org.gnome.desktop.session idle-delay 0
+  sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
   ```
-  
-  > https://unix.stackexchange.com/questions/361214/disable-gdm-suspend-on-lock-screen
 
 - Dash to PanelやDash to Dockで中クリックで新規インスタンスが起動しない
 
