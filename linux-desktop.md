@@ -48,8 +48,10 @@
 
 - gdmのサスペンド無効化
   ```
-  sudo -u gdm dbus-launch gsettings set org.gnome.desktop.session idle-delay 0
-  sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+  sudo -u gdm -g gdm dbus-launch gsettings set org.gnome.desktop.session idle-delay 0
+  sudo -u gdm -g gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+  sudo -u gdm -g gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+  sudo -u gdm -g gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
   ```
 
 - Dash to PanelやDash to Dockで中クリックで新規インスタンスが起動しない
