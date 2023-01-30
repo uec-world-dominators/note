@@ -71,3 +71,34 @@
 
   > https://github.com/home-sweet-gnome/dash-to-panel/blob/17f6fdfde3f887e1e09e29c4303371816a14e4bd/appIcons.js#L991
   > https://github.com/micheleg/dash-to-dock/blob/53114b4e000482a753e8b42dfa10d6057c08d1c6/appIcons.js#L676
+
+- フォント設定（`fontconfig`）
+  `serif`/`sans-serif`/`monospace`に対応するフォントを設定
+  ```xml
+  <?xml version='1.0'?>
+  <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+  <fontconfig>
+      <alias>
+          <family>serif</family>
+          <prefer>
+              <family>Noto Serif CJK JP</family>
+              <family>IPAexMincho</family>
+          </prefer>
+      </alias>
+      <alias>
+          <family>sans-serif</family>
+          <prefer>
+              <family>Noto Sans CJK JP</family>
+              <family>IPAexGothic</family>
+          </prefer>
+      </alias>
+      <alias>
+          <family>monospace</family>
+          <prefer>
+              <family>Fira Code</family>
+              <family>Noto Sans Mono CJK JP</family>
+              <family>IPAexGothic</family>
+          </prefer>
+      </alias>
+  </fontconfig>
+  ```
